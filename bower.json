@@ -1,0 +1,8 @@
+{
+  "name": "office365-bookmarks",
+  "version": "0.0.1.9",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  }
+}
