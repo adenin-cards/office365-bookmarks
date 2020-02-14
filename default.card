@@ -15,21 +15,53 @@ properties:
     xtype: at-core-view
     model: 
     view: |-
-      <at-link href="{{url}}">
-            <div class="layout-horizontal p prsm">        
-              <div class="font-body1 layout-self-center layout-flex">
-                {{title}}              
-              </div>
-              <div class="layout-self-center blue ">
-                <at-carbon-icon icon="now:home"></at-carbon-icon>
-              </div>
-          </div>
-      </at-link>
+      <div class="layout-horizontal layout-around-justified mylg">
+      	<div class="layout-vertical">
+      		<at-link class="layout-vertical layout-center-center">
+      			<iron-image src="{{ '/office365-bookmarks/Outlook.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">Outlook</div>
+      		</at-link>
+      		<at-link class="layout-vertical layout-center-center mt">
+      			<iron-image src="{{ '/office365-bookmarks/Excel.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">Excel</div>
+      		</at-link>
+        </div>
+       	<div class="layout-vertical">
+      		<at-link class="layout-vertical layout-center-center">
+      			<iron-image src="{{ '/office365-bookmarks/OneDrive.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">OneDrive</div>
+      		</at-link>
+      		<at-link class="layout-vertical layout-center-center mt">
+      			<iron-image src="{{ '/office365-bookmarks/PowerPoint.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">PowerPoint</div>
+      		</at-link>
+        </div>
+       	<div class="layout-vertical">
+      		<at-link class="layout-vertical layout-center-center">
+      			<iron-image src="{{ '/office365-bookmarks/Word.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">Word</div>
+      		</at-link>
+      		<at-link class="layout-vertical layout-center-center mt">
+      			<iron-image src="{{ '/office365-bookmarks/OneNote.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">OneNote</div>
+      		</at-link>
+        </div>
+      </div>
+
+      <style>
+        .apps-icon-365 {
+        	width: 50px;
+          height: 50px;
+        }
+      </style>
     xgridcols: 12
     xstyle: 
     xclass: 
-    actionListeners: []
+    actionListeners:
+      - _all
     default: 
+    value: 
+    modelRoot: state.model
 $meta:
   cardId: !!int 16
   preview-data: |-
