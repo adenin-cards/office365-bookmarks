@@ -5,7 +5,7 @@ CollectionMode: '{"CollectionMode":"0"}'
 MaxItems: '{"MaxItems":"3"}'
 Priority: '{"Priority":"5"}'
 StreamSource: null
-CardComponent: atm-pto-status/atm-pto-status-card
+CardComponent: office365-bookmarks/office365-bookmarks-card
 CommonPart:
   Owner: !!int 2
   Container: null
@@ -43,8 +43,7 @@ AppPart:
   AvailableAppFaceRecords: null
   HasPattern: !!bool false
 RoleViewPermissionsPart:
-  AllowedRoles:
-    - Authenticated
+  AllowedRoles: []
   Audiences: []
   Mandatory: False
 RecurringTaskPart:

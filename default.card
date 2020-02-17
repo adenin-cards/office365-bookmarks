@@ -10,6 +10,7 @@ properties:
     xclass: 
     actionListeners:
       - _start
+    model: 
   content:
     type: element
     xtype: at-core-view
@@ -17,31 +18,31 @@ properties:
     view: |-
       <div class="layout-horizontal layout-around-justified mylg">
       	<div class="layout-vertical">
-      		<at-link class="layout-vertical layout-center-center">
+      		<at-link href="https://outlook.office365.com/" class="layout-vertical layout-center-center">
       			<iron-image src="{{ '/office365-bookmarks/Outlook.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">Outlook</div>
       		</at-link>
-      		<at-link class="layout-vertical layout-center-center mt">
+      		<at-link href="https://office.com/launch/excel" class="layout-vertical layout-center-center mt">
       			<iron-image src="{{ '/office365-bookmarks/Excel.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">Excel</div>
       		</at-link>
         </div>
        	<div class="layout-vertical">
-      		<at-link class="layout-vertical layout-center-center">
+      		<at-link href="https://office.com/launch/onedrive" class="layout-vertical layout-center-center">
       			<iron-image src="{{ '/office365-bookmarks/OneDrive.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">OneDrive</div>
       		</at-link>
-      		<at-link class="layout-vertical layout-center-center mt">
+      		<at-link href="https://office.com/launch/powerpoint" class="layout-vertical layout-center-center mt">
       			<iron-image src="{{ '/office365-bookmarks/PowerPoint.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">PowerPoint</div>
       		</at-link>
         </div>
        	<div class="layout-vertical">
-      		<at-link class="layout-vertical layout-center-center">
+      		<at-link href="https://office.com/launch/word" class="layout-vertical layout-center-center">
       			<iron-image src="{{ '/office365-bookmarks/Word.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">Word</div>
       		</at-link>
-      		<at-link class="layout-vertical layout-center-center mt">
+      		<at-link href="https://office.com/launch/onenote" class="layout-vertical layout-center-center mt">
       			<iron-image src="{{ '/office365-bookmarks/OneNote.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">OneNote</div>
       		</at-link>
@@ -52,6 +53,10 @@ properties:
         .apps-icon-365 {
         	width: 50px;
           height: 50px;
+        }
+        
+        at-link div {
+        	color: #333 !important;
         }
       </style>
     xgridcols: 12
