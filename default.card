@@ -18,33 +18,43 @@ properties:
     view: |-
       <div class="layout-horizontal layout-around-justified mylg">
       	<div class="layout-vertical">
-      		<at-link href="https://outlook.office365.com/" class="layout-vertical layout-center-center">
+      		<at-link href="https://outlook.office365.com/" class="layout-vertical layout-center-center o365-bookmark">
       			<iron-image src="{{ '/office365-bookmarks/Outlook.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">Outlook</div>
       		</at-link>
-      		<at-link href="https://office.com/launch/excel" class="layout-vertical layout-center-center mt">
-      			<iron-image src="{{ '/office365-bookmarks/Excel.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
-      			<div class="font-subhead mtsm">Excel</div>
+      		<at-link href="https://office.com/launch/word" class="layout-vertical layout-center-center mt o365-bookmark">
+      			<iron-image src="{{ '/office365-bookmarks/Word.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">Word</div>
       		</at-link>
         </div>
        	<div class="layout-vertical">
-      		<at-link href="https://office.com/launch/onedrive" class="layout-vertical layout-center-center">
+      		<at-link href="https://office.com/launch/onedrive" class="layout-vertical layout-center-center o365-bookmark">
       			<iron-image src="{{ '/office365-bookmarks/OneDrive.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">OneDrive</div>
       		</at-link>
-      		<at-link href="https://office.com/launch/powerpoint" class="layout-vertical layout-center-center mt">
+      		<at-link href="https://office.com/launch/powerpoint" class="layout-vertical layout-center-center mt o365-bookmark">
       			<iron-image src="{{ '/office365-bookmarks/PowerPoint.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">PowerPoint</div>
       		</at-link>
         </div>
-       	<div class="layout-vertical">
-      		<at-link href="https://office.com/launch/word" class="layout-vertical layout-center-center">
-      			<iron-image src="{{ '/office365-bookmarks/Word.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
-      			<div class="font-subhead mtsm">Word</div>
+      	<div class="layout-vertical">
+      		<at-link href="https://office.com/launch/sharepoint" class="layout-vertical layout-center-center o365-bookmark">
+      			<iron-image src="{{ '/office365-bookmarks/SharePoint.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">SharePoint</div>
       		</at-link>
-      		<at-link href="https://office.com/launch/onenote" class="layout-vertical layout-center-center mt">
+      		<at-link href="https://office.com/launch/excel" class="layout-vertical layout-center-center mt o365-bookmark">
+      			<iron-image src="{{ '/office365-bookmarks/Excel.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">Excel</div>
+      		</at-link>
+      	</div>
+       	<div class="layout-vertical">
+      		<at-link href="https://office.com/launch/onenote" class="layout-vertical layout-center-center o365-bookmark">
       			<iron-image src="{{ '/office365-bookmarks/OneNote.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
       			<div class="font-subhead mtsm">OneNote</div>
+      		</at-link>
+      		<at-link href="https://yammer.com/office365" class="layout-vertical layout-center-center mt o365-bookmark">
+      			<iron-image src="{{ '/office365-bookmarks/Yammer.png' | component_url }}" preload sizing="contain" class="apps-icon-365"></iron-image>
+      			<div class="font-subhead mtsm">Yammer</div>
       		</at-link>
         </div>
       </div>
@@ -55,7 +65,25 @@ properties:
           height: 50px;
         }
         
-        at-link div {
+        .o365-bookmark {
+        	width: 60px;
+          height: 75px;
+        }
+        
+        .o365-bookmark:hover {
+        	cursor: pointer !important;
+        }
+        
+        .o365-bookmark iron-image {
+        	transform: scale(0.9);
+          transition: all .2s ease-in-out;
+        }
+        
+        .o365-bookmark:hover iron-image {
+        	transform: scale(1);
+        }
+        
+        .o365-bookmark div {
         	color: #333 !important;
         }
       </style>
