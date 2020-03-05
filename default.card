@@ -95,6 +95,13 @@ properties:
     default: 
     value: 
     modelRoot: state.model
+  footer3:
+    type: element
+    title: All Apps
+    xtype: at-carbon-card-footer
+    xgridcols: 12
+    model: 
+    href: https://office.com/
 $meta:
   cardId: !!int 16
   preview-data: |-
